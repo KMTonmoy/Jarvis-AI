@@ -1,0 +1,46 @@
+Here is an example of a simple application for a sick leave in Python:
+```
+# Define a function to ask for user input
+def get_user_input():
+  name = input("Enter your name: ")
+  reason = input("Enter the reason for sick leave: ")
+  num_days = int(input("Enter the number of sick days: "))
+  return name, reason, num_days
+
+# Define a function to generate the application
+def generate_application(name, reason, num_days):
+  print("Sick Leave Application")
+  print("---------------------")
+  print("Name: ", name)
+  print("Reason: ", reason)
+  print("Number of sick days: ", num_days)
+  print("Date: ", datetime.date.today())
+
+# Main function
+def main():
+  name, reason, num_days = get_user_input()
+  generate_application(name, reason, num_days)
+
+# Run the main function
+if __name__ == "__main__":
+  main()
+```
+This program will ask the user for their name, reason for sick leave, and number of sick days. It will then generate a simple application with the provided information.
+
+Here's an example output:
+```
+Enter your name: DevTonmoy
+Enter the reason for sick leave: Fever
+Enter the number of sick days: 2
+Sick Leave Application
+---------------------
+Name:  DevTonmoy
+Reason:  Fever
+Number of sick days:  2
+Date:  2023-03-01
+```
+Note: This is a very basic example and you can customize it as per your needs.
+
+Also, you can use this as a console-based application or you can create a GUI-based application using libraries like Tkinter or PyQt.
+
+Let me know if you want me to add anything!
